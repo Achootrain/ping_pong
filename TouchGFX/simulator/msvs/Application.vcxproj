@@ -27,6 +27,9 @@
     <ClCompile Include="..\..\gui\src\overscreen_screen\OverScreenPresenter.cpp"/>
     <ClCompile Include="..\..\gui\src\overscreen_screen\OverScreenView.cpp"/>
     <ClCompile Include="..\..\generated\gui_generated\src\overscreen_screen\OverScreenViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\startscreen_screen\StartScreenPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\startscreen_screen\StartScreenView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\startscreen_screen\StartScreenViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -183,6 +186,9 @@
     <ClInclude Include="..\..\gui\include\gui\overscreen_screen\OverScreenPresenter.hpp"/>
     <ClInclude Include="..\..\gui\include\gui\overscreen_screen\OverScreenView.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\overscreen_screen\OverScreenViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\startscreen_screen\StartScreenPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\startscreen_screen\StartScreenView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\startscreen_screen\StartScreenViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>

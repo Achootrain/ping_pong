@@ -18,6 +18,8 @@
 #include <gui/gamescreen_screen/GameScreenPresenter.hpp>
 #include <gui/overscreen_screen/OverScreenView.hpp>
 #include <gui/overscreen_screen/OverScreenPresenter.hpp>
+#include <gui/startscreen_screen/StartScreenView.hpp>
+#include <gui/startscreen_screen/StartScreenPresenter.hpp>
 
 
 /**
@@ -42,7 +44,8 @@ public:
      */
     typedef touchgfx::meta::TypeList< GameScreenView,
             touchgfx::meta::TypeList< OverScreenView,
-            touchgfx::meta::Nil >
+            touchgfx::meta::TypeList< StartScreenView,
+            touchgfx::meta::Nil > >
             > GeneratedViewTypes;
 
     /**
@@ -56,7 +59,8 @@ public:
      */
     typedef touchgfx::meta::TypeList< GameScreenPresenter,
             touchgfx::meta::TypeList< OverScreenPresenter,
-            touchgfx::meta::Nil >
+            touchgfx::meta::TypeList< StartScreenPresenter,
+            touchgfx::meta::Nil > >
             > GeneratedPresenterTypes;
 
     /**

@@ -6,6 +6,9 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_XIX1" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Start Game</Translation>
+      </Text>
       <Text Id="__SingleUse_077T" Alignment="Center" TypographyId="Large">
         <Translation Language="GB">Play Again</Translation>
       </Text>

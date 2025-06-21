@@ -13,6 +13,8 @@
 #include <gui/gamescreen_screen/GameScreenPresenter.hpp>
 #include <gui/overscreen_screen/OverScreenView.hpp>
 #include <gui/overscreen_screen/OverScreenPresenter.hpp>
+#include <gui/startscreen_screen/StartScreenView.hpp>
+#include <gui/startscreen_screen/StartScreenPresenter.hpp>
 
 using namespace touchgfx;
 
