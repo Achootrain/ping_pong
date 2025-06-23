@@ -6,6 +6,7 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+
       <Text Id="__SingleUse_6BBQ" Alignment="Left" TypographyId="Typography_00">
         <Translation Language="GB"></Translation>
       </Text>
@@ -14,6 +15,7 @@
       </Text>
       <Text Id="__SingleUse_Q720" Alignment="Center" TypographyId="Large">
         <Translation Language="GB"> PING PONG &#10;BATTLE</Translation>
+
       </Text>
       <Text Id="__SingleUse_077T" Alignment="Center" TypographyId="Large">
         <Translation Language="GB">Play Again</Translation>

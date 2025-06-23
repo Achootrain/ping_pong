@@ -8,9 +8,14 @@
 #include <mvp/View.hpp>
 #include <gui/startscreen_screen/StartScreenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
+
+#include <touchgfx/widgets/ScalableImage.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
+
 #include <touchgfx/widgets/TiledImage.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/containers/buttons/Buttons.hpp>
+
 
 class StartScreenViewBase : public touchgfx::View<StartScreenPresenter>
 {
@@ -28,21 +33,31 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
+
+    touchgfx::ScalableImage scalableImage1;
+    touchgfx::ButtonWithLabel buttonWithLabel1;
     touchgfx::TiledImage tiledImage1;
     touchgfx::TextArea textArea1;
     touchgfx::IconButtonStyle< touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  >  flexButton1;
+
 
 private:
 
     /*
      * Callback Declarations
      */
-    touchgfx::Callback<StartScreenViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
+
+    touchgfx::Callback<StartScreenViewBase, const touchgfx::AbstractButton&> buttonCallback;
+
+
 
     /*
      * Callback Handler Declarations
      */
+    void buttonCallbackHandler(const touchgfx::AbstractButton& src);
+
     void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
+
 
 };
 

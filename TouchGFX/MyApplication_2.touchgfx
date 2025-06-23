@@ -294,71 +294,36 @@
         "Name": "StartScreen",
         "Components": [
           {
-            "Type": "TiledImage",
-            "Name": "tiledImage1",
+
+            "Type": "ScalableImage",
+            "Name": "scalableImage1",
             "Width": 240,
             "Height": 320,
-            "FileName": "a silhouette of table tennis2.png"
+            "Filename": "pong.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
           },
           {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "Y": 45,
-            "Width": 232,
-            "Height": 96,
-            "TextId": "__SingleUse_Q720",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 237,
-              "Green": 99,
-              "Blue": 19
-            }
-          },
-          {
-            "Type": "FlexButton",
-            "Name": "flexButton1",
-            "X": 80,
-            "Y": 218,
-            "Width": 80,
+            "Type": "ButtonWithLabel",
+            "Name": "buttonWithLabel1",
+            "Y": 213,
+            "Width": 240,
             "Height": 50,
-            "ButtonTrigger": {
-              "Type": "ClickButtonTrigger"
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_medium_rounded_normal.png",
+            "TextId": "__SingleUse_XIX1",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
             },
-            "ButtonStyles": [
-              {
-                "Type": "IconButtonStyle",
-                "X": 1,
-                "Y": 1,
-                "IconReleased": "__generated\\icon_theme_images_action_label_important_80_50_E8F6FB.svg.png",
-                "IconPressed": "__generated\\icon_theme_images_communication_call_made_80_50_E8F6FB.svg.png"
-              },
-              {
-                "Type": "BoxWithBorderButtonStyle",
-                "Width": 80,
-                "Height": 50,
-                "LockToFlexButtonSize": true,
-                "BorderSize": 5,
-                "ColorReleased": {
-                  "Red": 194,
-                  "Green": 91,
-                  "Blue": 31
-                },
-                "ColorPressed": {
-                  "Green": 153,
-                  "Blue": 204
-                },
-                "ColorBorderReleased": {
-                  "Red": 255,
-                  "Green": 255,
-                  "Blue": 255
-                },
-                "ColorBorderPressed": {
-                  "Red": 51,
-                  "Green": 102,
-                  "Blue": 153
-                }
-              }
-            ]
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\medium_rounded_normal.json"
+
           }
         ],
         "Interactions": [
@@ -366,11 +331,13 @@
             "InteractionName": "Interaction1",
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "flexButton1"
+
+              "TriggerComponent": "buttonWithLabel1"
             },
             "Action": {
               "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
               "ActionComponent": "GameScreen"
             }
           }

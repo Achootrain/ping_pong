@@ -1,0 +1,16 @@
+#ifndef AUDIO_PLAYER_H
+#define AUDIO_PLAYER_H
+
+#include "stm32f4xx_hal.h"
+
+// Mảng dữ liệu âm thanh dạng 16-bit mono PCM 44.1kHz
+const uint16_t pingSound[] = {
+    0xFFEF, 0xFFF2, 0xFFFA, 0xFFFE, 0x000F, 0x000F, 0x000C, 0x000B,
+    0x0002, 0x0003, 0x0006, 0xFFFF, 0x0004, 0x0002, 0x0006, 0x0006,
+    0xFFFF, 0x0009, 0x000D, 0x000D, 0x0015, 0x001C, 0x0012, 0x000A,
+};
+const uint32_t pingSoundSize = sizeof(pingSound);
+
+void AudioPlayer_PlayPing(void);
+
+#endif // AUDIO_PLAYER_H
